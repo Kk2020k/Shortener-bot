@@ -22,7 +22,7 @@ PORT = environ.get("PORT", "8080")
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
-PICS = (environ.get('PICS', 'https://telegra.ph/file/b806ad314d0c415571bde.jpg')).split()
+PICS = (environ.get('PICS', 'https://te.legra.ph/file/5282951aa2c650a428fa4.jpg')).split()
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '2001653136').split()]
@@ -47,7 +47,7 @@ IMDB = is_enabled((environ.get('IMDB', "True")), False)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), False)
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "NAME: <code>{file_name}</code> \n\nJoin Now : @cinemadudes1 </b>")
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", "NAME: <code>{file_name}</code> \n\nJoin Now : @cinemadudes1 </b>")
-IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "🧿 ᴛɪᴛᴛʟᴇ :  {title} \n🌟 ʀᴀᴛɪɴɢ : {rating} \n🎭 ɢᴇɴʀᴇ : {genres} \n📆 ʀᴇʟᴇᴀsᴇ : {year} \n🎙️ʟᴀɴɢᴜᴀɢᴇ : {languages} \n\n 🔗 Join : @CinemaDudes1 🔗 \n\n This Msg will delete in 5 min")
+IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "🧿 ᴛɪᴛᴛʟᴇ :  {title} \n🌟 ʀᴀᴛɪɴɢ : {rating} \n🎭 ɢᴇɴʀᴇ : {genres} \n📆 ʀᴇʟᴇᴀsᴇ : {year} \n🎙️ʟᴀɴɢᴜᴀɢᴇ : {languages} \n\n ⚡Join @MainChannel2k ⚡ n\n This Msg will delete in 2 min")
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
@@ -82,10 +82,10 @@ if SELF_DELETE == "True":
 
     # Download Tutorial Button #
 DOWNLOAD_TEXT_NAME = "📥 HOW TO DOWNLOAD 📥"
-DOWNLOAD_TEXT_URL = "https://t.me/cinemadudes1/79"
+DOWNLOAD_TEXT_URL = "https://t.me/MainChannel2k/6"
 
    # Custom Caption Under Button #
 CAPTION_BUTTON = "JOIN CHANNEL"
-CAPTION_BUTTON_URL = "https://t.me/cinemadudes1"
+CAPTION_BUTTON_URL = "https://t.me/Update22k"
 
    # Auto Delete For Bot Sending Files #
