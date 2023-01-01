@@ -108,7 +108,7 @@ async def next_page(bot, query):
 
     btn.insert(0,
         [
-            InlineKeyboardButton(text="⚡ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ⚡", url='https://telegram.me/How_to_Download_From_Search_Bot/2')
+            InlineKeyboardButton(text="⚡ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ⚡", url='https://t.me/MainChannel2k/6')
         ]
     )
 
@@ -434,8 +434,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('⚚ ΛᎠᎠ MΞ ϮԾ YԾUᏒ GᏒԾUᎮ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ], [
-            InlineKeyboardButton('⚡ Main Channel', url='https://t.me/cinemadudes1'),
-            InlineKeyboardButton('🤖 Request Movies', url='https://t.me/+XnCNbZ23N5wzZTQ1')
+            InlineKeyboardButton('⚡ Updates ⚡', url='https://t.me/Update22k'),
+            InlineKeyboardButton('⚡Main Channel⚡', url='https://t.me/MainChannel2k')
         ], [
             InlineKeyboardButton('♻️ HΞLᎮ ♻️', callback_data='help'),
             InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about')
@@ -682,7 +682,7 @@ async def auto_filter(client, msg, spoll=False):
 
     btn.insert(0,
         [
-            InlineKeyboardButton(text="⚡ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ⚡", url='https://t.me/cinemadudes1/135')
+            InlineKeyboardButton(text="⚡ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ⚡", url='https://t.me/MainChannel2k/6')
         ]
     )
 
@@ -733,9 +733,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"Mᴏᴠɪᴇ Nᴀᴍᴇ 🎞️ : <code>{search}</code>\n\n🔗 Join : @CinemaDudes1 🔗 \n\n This Msg will delete in 5 min \n\n Note : If your movie is not below then check spelling of the movie name,year.or else wait till our admin upload the movie and reply to you! \n\n If you don't know to download movie then watch the video below 👇"
-
-
+        cap = f"Mᴏᴠɪᴇ Nᴀᴍᴇ 🎞️ : <code>{search}</code>\n\n🔗 Join : @MainChannel2k 🔗 \n\n This Msg will delete in 5 min \n\n Note : If your movie is not below then check spelling of the movie name,year.or  /n/n Example,Love Today ,Love Today 2022  \n\n If you don't know to download movie then watch the video below 👇"
     if imdb and imdb.get('poster'):
         try:
             hehe =  await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024],
