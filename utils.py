@@ -169,6 +169,7 @@ async def search_gagala(text):
     return [title.getText() for title in titles]
 
 
+
 async def get_settings(group_id):
     settings = temp.SETTINGS.get(group_id)
     if not settings:
@@ -382,8 +383,7 @@ async def get_shortlink(link):
     if "http" == https:
         https = "https"
         link = link.replace("http", https)
-
-    url = f'https://cac.teckypress.in/api'
+    url = f'https://Clicksfly.com/api'
     params = {'api': URL_SHORTNER_WEBSITE_API,
               'url': link,
               }
@@ -391,9 +391,9 @@ async def get_shortlink(link):
     try:
         async with aiohttp.ClientSession() as session:
             async with session.get(url, params=params, raise_for_status=True, ssl=False) as response:
-                data = await response.json(content_type='text/html')
+                data = await response.json()
                 if data["status"] == "success":
-                    return data['shortlink']
+                    return data['shortenedUrl']
                 else:
                     logger.error(f"Error: {data['message']}")
                     return f'https://{URL_SHORTENR_WEBSITE}/api?api={URL_SHORTNER_WEBSITE_API}&link={link}'
@@ -401,4 +401,3 @@ async def get_shortlink(link):
     except Exception as e:
         logger.error(e)
         return f'{URL_SHORTENR_WEBSITE}/api?api={URL_SHORTNER_WEBSITE_API}&link={link}'
-
