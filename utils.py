@@ -384,9 +384,8 @@ async def get_shortlink(link):
         link = link.replace("http", https)
 
     url = f'https://cac.teckypress.in/api'
-    params = {'token': URL_SHORTNER_WEBSITE_API,
-              'link': link,
-              'format': 'json'
+    params = {'api': URL_SHORTNER_WEBSITE_API,
+              'url': link,
               }
 
     try:
