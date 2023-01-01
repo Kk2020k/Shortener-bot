@@ -23,10 +23,10 @@ async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [
             [
-                InlineKeyboardButton('Main Channel', url='https://t.me/cinemadudes1')
+                InlineKeyboardButton('⚡ Updates⚡, url='https://t.me/Update22k')
             ],
             [
-                InlineKeyboardButton('Request Movies 🔗', url='https://t.me/+XnCNbZ23N5wzZTQ1'),
+                InlineKeyboardButton('⚡Main Channel⚡', url='https://t.me/MainChannel2k'),
             ],
             [
                 InlineKeyboardButton(text=DOWNLOAD_TEXT_NAME,url=DOWNLOAD_TEXT_URL)
@@ -47,8 +47,8 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('⚚ ΛᎠᎠ MΞ ϮԾ YԾUᏒ GᏒԾUᎮ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('⚡ Request Movies', url='https://t.me/+XnCNbZ23N5wzZTQ1'),
-            InlineKeyboardButton('🤖 Main Channel', url='https://t.me/cinemadudes1')
+            InlineKeyboardButton('⚡ Updates⚡', url='https://t.me/Update22k'),
+            InlineKeyboardButton('⚡Main Channel⚡', url='https://t.me/MainChannel2k')
             ],[
             InlineKeyboardButton('♻️ HΞLᎮ ♻️', callback_data='help'),
             InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about')
@@ -70,12 +70,12 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "Main Channel", url=invite_link.invite_link
+                    "🔥 JOIИ UᎮDΛTΞS CHΛИИΞL 🔥", url=invite_link.invite_link
                 )
             ]
         ]
 
-        if message.command[1] != "⚡ Request Movies":
+        if message.command[1] != "Subscribe":
             try:
                 kk, file_id = message.command[1].split("_", 1)
                 pre = 'checksubp' if kk == 'filep' else 'checksub' 
@@ -93,8 +93,8 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('⚚ ΛᎠᎠ MΞ ϮԾ YԾUᏒ GᏒԾUᎮ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('⚡ Request Movies', url='https://t.me/+XnCNbZ23N5wzZTQ1'),
-            InlineKeyboardButton('🤖 UᎮDΛTΞS 🤖', url='https://t.me/cinemadudes1')
+            InlineKeyboardButton('⚡ Updates ⚡', url='https://t.me/Update22k'),
+            InlineKeyboardButton('⚡Main Channel⚡', url='https://t.me/MainChannel2k')
             ],[
             InlineKeyboardButton('♻️ HΞLᎮ ♻️', callback_data='help'),
             InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about')
